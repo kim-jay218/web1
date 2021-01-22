@@ -11,21 +11,28 @@
   <style>
     *{
       box-sizing: border-box;
+      
     }
     h1,h2{
       text-align: center;
       font-size:40px;
+      color:papayawhip;
     }
     h3{
-      color:blue;
+      color:white;
       text-decoration:underline;
     }
     #select{
-      font-size:30px;
+      font-size:40px;
       font-style: italic;
-    }
+      position:relative;
+   left:500px;
+   bottom: 300px;
+ }
+    
     .deactive{
       text-decoration:line-through;
+      color:purple
     }
     
  a{
@@ -35,11 +42,19 @@
  table{
    background-color:green;
    text-align: center;
+   position:relative;
+   left:500px;
+   bottom: 300px;
  }
  body{
-   background-color:paleturquoise;
    font-family: 'Nanum Pen Script', cursive;
-   font-size:30px
+   color:white;
+   font-size:30px;
+   background-image: url("챔스.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
  }
  a:hover{
    color:yellow
@@ -47,16 +62,52 @@
  img{
    border: 10px groove brown;
    margin:10px;
-   
-   
+   position:relative;
+   left:500px;
+   bottom: 300px;
  }
+   
+ 
  #a1,#a2{
    border: 5px solid green;
    width: 60px;
  }
- 
+ #fire{
+  position:relative;
+   left:0px !important;
+   bottom: 300px !important;
+ }
+ #win{
+  position:relative;
+   left:700px;
+   bottom: 625px;
+ }
+ iframe{
+   position: relative;
+   bottom:600px;
+   
+ }
+ #kaka{
+   position: relative;
+   bottom:600px;
+   text-align: left;
+ }
+ li{
+   color:white;
+ }
+.txtcol{
+  color:white;
+}
+textarea:focus{
+             background-color:black;
+             color:white
+         }
+#txtcol3{
+  color:white;
+}
 
   </style>
+<form action="감사합니다.html">
 <h1>재현이의FM도전기</h1>
 <h1 class="deactive">이진규의 웹과는 차원이 다른ㅎㅎ</h1>
 <h2>like <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=football+manager+2021" target="_blank" title="상세설명">FOOTBALL MANAGER2021 </a></h2>
@@ -70,12 +121,12 @@
 </ol>
 
 <h3><p><가격></p></h3>
-  <p>
-    <input type="radio" name="pc" value="pc" checked > :PC모드-54000원<br>
+  <p class="txtcol">
+    <input type="radio" name="pc" value="pc" checked >:PC모드-54000원<br>
     <input type="radio" name="pc" value="mob"  > :모바일모드-11000원<br>
   </p>
 
- <p> <input type="checkbox" name="opt" value="국대"> :국대모드-1200원<br>
+ <p class="txtcol"> <input type="checkbox" name="opt" value="국대"> :국대모드-1200원<br>
   <input type="checkbox" name="opt" value="생성"> :선수생성모드-1200원<br>
 </p>
 <h3><p  id="select"><이력></p></h3>
@@ -110,8 +161,19 @@
 <img src="발렌시아.jpeg" alt="발렌시아" title="발렌시아" height=80>
 <img src="포르투갈.jpeg" alt="포르투갈" title="포르투갈" height=80><br>
 
-<img src="https://kim-jay218.github.io/web1/김재현의fm도전기.jpg" alt="경질" title="경질" height="300"><br>
-<img src="우승.jpg" alt="우승" title="우승" height=300>
+<img id="fire" src="https://kim-jay218.github.io/web1/김재현의fm도전기.jpg" alt="경질" title="경질" height="300"><br>
+<img id="win" src="우승.jpg" alt="우승" title="우승" height=300>
 
+<h1 id="kaka"><u>이적시장</u></h1>
+  
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Uc3yrR1AMbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <p id=txtcol3>하고 싶은 말을 써주세요!</p> 
+    <p><textarea name="txt"  cols="60" rows="10"></textarea></p>
+    <input type="submit" value="제출">
+    
+    </form>
 </body>
 </html>
